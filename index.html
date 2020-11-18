@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</head>
+<body>
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Home-Hero-IMG.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Service-6.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Service-2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!--service offer-->
+<div class="services-wrap">
+<div class="services-row">
+	<div class="column left-row">
+	 <div class="services-column">
+		<div class="services-column-inner ">
+			<div class="services-inline-text-inner ">
+				<h3>Some of the investment services we offer</h3>
+				<p>Over 30 high quality professionally designed pre-built website concepts to choose from.&nbsp;Build your website using a fully visual interface, using our revolutionary page &amp; header builder.</p>
+			</div>
+		</div>
+	</div>
+</div>
+    <div class="column right-row">
+    	<div class="services-column">
+    		<div class="services-column-inner">
+    			<div class="row">
+                  <div class="column-row" >
+                  	<div class="services-interactive-box-inner">
+                  		<div class="services-interactive-box-icon-content">
+                  			<div class="services-interactive-box-icon services-line-animate services-line-animate-ready services-line-animated">		
+                  			</div>			
+                  		</div>   		
+                  	</div>     	
+                   <h2>Column 1</h2>
+                   <p>Some text..</p>
+                 </div>
+                 <div class="column-row" >
+                  <h2>Column 2</h2>
+                  <p>Some text..</p>
+                </div>
+                </div>
+                
+                <div class="row">
+                  <div class="column-row" >
+                   <h2>Column 1</h2>
+                   <p>Some text..</p>
+                 </div>
+                 <div class="column-row" >
+                  <h2>Column 2</h2>
+                  <p>Some text..</p>
+                </div>
+                </div>
+    			
+    		</div>
+    		
+    	</div>
+	
+    </div>
+</div>
+</div>
+
+<!--money-code-->
+<div class="money-wrap">
+<div class="money-row">
+	<div class="money-column money-left-row">
+<div class="services-column">
+    		<div class="services-column-inner">
+    			<div class="row">
+                  <div class="column-row" >
+                  	<div class="services-interactive-box-inner">
+                  		<div class="services-interactive-box-icon-content">
+                  			<div class="services-interactive-box-icon services-line-animate services-line-animate-ready services-line-animated">		
+                  			</div>			
+                  		</div>   		
+                  	</div>     	
+                   <h2>Column 1</h2>
+                   <p>Some text..</p>
+                 </div>
+                 <div class="column-row" >
+                  <h2>Column 2</h2>
+                  <p>Some text..</p>
+                </div>
+                </div>
+                </div>
+    		</div>
+	 </div>
+	</div>	
+</div>
+</div>
+    <div class="money-column money-right-row">
+    	
+	 <div class="money-column">
+		<div class="money-column-inner ">
+			<div class="money-inline-text-inner ">
+				<h3>Its time to make your money work for you</h3>
+				<p>Over 30 high quality professionally designed pre-built website concepts to choose from. Build your website using a fully visual interface, using our revolutionary page & header builder.</p>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<!--testimonal-->
+<div class="testimonal-code" style="background-color: rgba(250,250,250,1)">
+ <div class="testimonal-wrap">
+	 <div class="testimonal-row">
+		 <div class="testimonal-left-row">
+		 	<div class="testimonal-inline-inner-text">
+		 		<h3>A big part of financial freedom is having your heart and mind free from worry about the what-ifs of life.</h3>	
+			 </div>
+			 <div class="testimonal-inline-inner-text">
+			 	<h6>Tony Stark,</h6>	
+			 </div>
+			 <div class="testimonal-inline-inner-text">
+			 	<p><span class="h9">STARK INDUSTRIES</span></p>
+			 </div>
+		 </div>
+		 <div class="testimonal-right-row">
+		 	<img src="Home-IMG-4.jpg">
+		 </div>		
+	 </div>	
+ </div>
+</div>
+<br>
+<!--process-code-->
+<div class="process-code">
+<div class="process-wrap">
+	<div class="process-row">
+		<div class="process-inner-text">
+			<p style="text-align:  center;"><span class="h10">How it Works</span></p>
+		</div>
+		<div class="process-inner-text">
+			<h3 style="text-align:  center;">A Simple Process</h3>
+		</div>
+		
+	
+	<div class="process-inner-row">
+  <div class="process-column" >
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="process-column" >
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="process-column" >
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
